@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <title>Varan.shop</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <ul class="menu">
+            <li><a href="index.html">Главная</a></li>
+            <li id="inside">О нас
+                <ul class="drop">
+                    <li><a href="1.html">Спайк</a></li>
+                    <li><a href="2.html">Ель Примо</a></li>
+                    <li><a href="3.html">Генерал Гавс</a></li>
+                </ul>
+            </li>
+            <li>Контакты</li>
+        </ul>
+        <button>Заказать</button>
+    </header>
+    <main>
+        <h1>Эль Примо</h1>
+        <img src="https://izotika.ru/wp-content/uploads/c/8/4/c84216bada2ff4284b99345ed58638e5.jpeg" alt="">
+        <h2>Эль Примо (El Primo) — боец ближнего боя, отдающий предпочтение кулачному махачу. У него огромный запас здоровья, поэтому он выступает в роли танка. Небольшую скорость персонажа компенсировали суператакой — мощным прыжком на дальнее расстояние. Обычная атака: Кулак ярости. Кулаки Эль Примо пылают от ярости.</h2>
+    
+    </main>
+    <footer>
+        <ul class="menu">
+            <li>Главная </li>
+            <li id="inside">О нас
+                <ul class="drop">
+                    <li>А нас</li>
+                    <li>Е нас</li>
+                    <li>Ё нас</li>
+                </ul>
+            </li>
+            <li>Контакты</li>
+        </ul>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                arrows: false,
+                responsive: {
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>
